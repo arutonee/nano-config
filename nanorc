@@ -1,0 +1,73 @@
+# Appearance
+set atblanks
+set boldtext
+set constantshow
+set guidestripe 80
+set indicator
+set linenumbers
+set minibar
+set nohelp
+set softwrap
+set stateflags
+
+# Behavior
+set autoindent
+set fill 80
+set mouse
+set multibuffer
+set positionlog
+set regexp
+set smarthome
+set tabsize 2
+set tabstospaces
+set zap
+
+# Colors
+set numbercolor bold,black,normal
+set scrollercolor cyan,black
+set selectedcolor bold,normal,black
+set stripecolor normal,black
+
+# Syntax Highlighting
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano-syntax-highlighting/*.nanorc"
+
+# Keybinds
+bind ^C cancel all
+bind ^Q exit all
+bind ^S savefile all
+bind ^O insert all
+bind ^G whereis all
+bind M-P findprevious all
+bind M-N findnext all
+bind M-R replace all
+bind ^K cut all
+bind ^Y copy all
+bind ^V paste all
+bind ^W chopwordleft all
+bind ^Space mark all
+bind ^T indent all
+bind ^U unindent all
+bind ^/ comment all
+bind ^B left all
+bind ^F right all
+bind ^P up all
+bind ^N down all
+bind ^L center all
+bind ^A home all
+bind ^E end all
+bind M-S firstline all
+bind M-E lastline all
+bind M-G gotoline all
+bind M-B findbracket all
+bind M-A anchor all
+bind Sh-M-P prevanchor all
+bind Sh-M-N nextanchor all
+bind M-, prevbuf all
+bind M-. nextbuf all
+bind ^\ recordmacro all
+bind M-\ runmacro all
+bind ^Z undo all
+bind M-Z redo all
+bind ^R refresh all
+bind M-H suspend all
