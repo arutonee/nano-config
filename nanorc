@@ -20,6 +20,7 @@ set regexp
 set smarthome
 set tabsize 2
 set tabstospaces
+set wordchars "_"
 set zap
 
 # Colors
@@ -31,6 +32,10 @@ set stripecolor normal,black
 # Syntax Highlighting
 include "/usr/share/nano/*.nanorc"
 include "/usr/share/nano-syntax-highlighting/*.nanorc"
+
+# Syntax Extensions
+## Elixir
+extendsyntax Elixir formatter mix format
 
 # Keybinds
 bind ^C cancel all
@@ -46,9 +51,12 @@ bind ^Y copy all
 bind ^V paste all
 bind ^W chopwordleft all
 bind ^Space mark all
+bind Sh-M-F formatter all
+bind Sh-M-L linter all
 bind ^T indent all
 bind ^U unindent all
 bind ^/ comment all
+bind ^J complete all
 bind ^B left all
 bind ^F right all
 bind ^P up all
