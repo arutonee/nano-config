@@ -7,7 +7,7 @@ set indicator
 set linenumbers
 set minibar
 set nohelp
-set softwrap
+# set softwrap
 set stateflags
 
 # Behavior
@@ -24,14 +24,16 @@ set wordchars "_"
 set zap
 
 # Colors
-set numbercolor bold,black,normal
+set numbercolor brightblack,normal
 set scrollercolor cyan,black
 set selectedcolor bold,normal,black
-set stripecolor normal,black
+set stripecolor ,black
 
 # Syntax Highlighting
 include "/usr/share/nano/*.nanorc"
 include "/usr/share/nano-syntax-highlighting/*.nanorc"
+include "~/.config/nano/syntax/*.nanorc"
+include "~/.config/nano/example.syntax.nanorc"
 
 # Syntax Extensions
 ## Elixir

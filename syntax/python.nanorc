@@ -1,0 +1,38 @@
+syntax "python" "\.py$"
+comment "#"
+tabgives "    "
+
+# unused variables
+color black "_[^_][^\),]*"
+
+# numbers
+color cyan "[0-9][0-9_]*"
+
+# function definition
+color red "\s*def\ [A-Za-z0-9_]*"
+
+# module/class
+color yellow "^(from|import|class)\ [A-Za-z0-9_]*"
+
+# builtins
+# keywords
+color brightblue "(\s|^)(False|None|True|and|as|assert|async|await|break|case|class|continue|def|del|elif|else|except|finally|for|from|global|if|import|in|is|lambda|match|nonlocal|not|or|pass|raise|return|try|while|with|yield)(\s|$)"
+
+# comments
+color black "^\s*#.*"
+
+# reminders
+color lightblack,yellow "(FIXME|TODO|XXX)"
+
+# strings
+color green ""([^"]|\\")*""
+color green "'([^']|\\')*'"
+
+color green start="[^\\]"""" end="[^\\]""""
+color green start="[^\\]'''" end="[^\\]'''"
+
+# decorators
+color magenta "@[A-Za-z0-9_]*"
+
+# trailing whitespace
+color normal,red "\s+$"

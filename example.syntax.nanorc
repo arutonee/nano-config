@@ -1,0 +1,17 @@
+syntax "EXAMPLE" "^/home/.*/\.config/nano/example.syntax.nanorc$"
+# header
+# magic
+comment "#"
+# tabgives
+
+color black "__unused_variables"
+color cyan "__numbers"
+color red "__function_definition"
+color yellow "__module_or_class"
+color brightred "__builtins"
+color brightblue "__keywords"
+color black "__comments"
+color lightblack,yellow "__reminders"
+color green "__strings"
+color magenta "__specs_and_decorators"
+color normal,red "__trailing_whitespace"
