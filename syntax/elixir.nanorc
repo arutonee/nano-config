@@ -11,7 +11,7 @@ color black "(\W|^)_[A-Za-z0-9\?!](\w|\?|!)*"
 color yellow "(\W|^)[A-Z][A-Za-z]*"
 
 # atoms
-color magenta "(\W|^):\w+"
+color magenta "([^:\w]|^):\w+"
 color magenta "\w+:(\s|$)"
 
 # builtins
