@@ -15,7 +15,7 @@ color red "(\s|^)(abs|and|binary_part|bit_size|byte_size|ceil|div|elem|floor|hd|
 color red "(\s|^)(alias!|apply|binary_slice|binding|dbg|destructure|exit|function_exported\?|get_and_update_in|get_in|inspect|macro_exported\?|make_ref|match?|max|min|pop_in|put_elem|put_in|send|spawn|spawn_link|spawn_monitor|struct|struct!|tap|then|throw|to_charlist|to_string|update_in|var!)(\s|$)"
 
 # keywords
-color brightblue "(\s|^)(def|defdelegate|defexception|defguard|defguardp|defimpl|defmacro|defmacrop|defmodule|defoverridable|defp|defprotocol|defstruct|do|else|end|if|raise|reraise|unless|use)(\s|$)"
+color brightblue "(\s|^)(case|cond|def|defdelegate|defexception|defguard|defguardp|defimpl|defmacro|defmacrop|defmodule|defoverridable|defp|defprotocol|defstruct|do|else|end|if|raise|reraise|unless|use)(\s|$)"
 
 # comments
 color black "^\s*#.*"
