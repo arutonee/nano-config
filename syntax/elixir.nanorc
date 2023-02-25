@@ -11,7 +11,7 @@ color black "(\W|^)_[A-Za-z0-9\?!](\w|\?|!)*"
 color yellow "[A-Z][A-Za-z]*"
 
 # atoms
-color magenta "(\s|^):\w+"
+color magenta "(\W|^):\w+"
 color magenta "\w+:(\s|$)"
 
 # builtins
@@ -43,7 +43,7 @@ color green "(\s|^)\?.(\s|$)"
 color green "(\s|^)\?\\.(\s|$)"
 
 # specs and decorators
-color magenta "^\s*@[^0-9'"]*"
+color magenta "^\s*@\w*"
 
 # trailing whitespace
 color normal,red "\s+$"
