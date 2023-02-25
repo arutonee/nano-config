@@ -8,7 +8,7 @@ color cyan "([0-9]|0x|0b|0o)[0-9_\.]*"
 color black "(\W|^)_[A-Za-z0-9\?!](\w|\?|!)*"
 
 # module or class
-color yellow "[A-Z][A-Za-z]*"
+color yellow "(\W|^)[A-Z][A-Za-z]*"
 
 # atoms
 color magenta "(\W|^):\w+"
