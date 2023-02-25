@@ -1,0 +1,42 @@
+syntax "elixir" "\.exs?$"
+comment "#"
+
+# numbers
+color cyan "[0-9][0-9_\.]*"
+
+# unused variables
+color black "_(\w|!)*"
+
+# module or class
+color yellow "[A-Z][a-z]*"
+
+# builtins
+color red "(\s|^)(abs|and|binary_part|bit_size|byte_size|ceil|div|elem|floor|hd|in|is_atom|is_binary|is_bitstring|is_boolean|is_exception|is_float|is_function|is_integer|is_list|is_map|is_map_key|is_nil|is_number|is_pid|is_port|is_reference|is_struct|is_tuple|length|map_size|node|not|or|rem|round|self|tl|trunc|tuple_size)(\s|$)"
+color red "(\s|^)(alias!|apply|binary_slice|binding|dbg|destructure|exit|function_exported\?|get_and_update_in|get_in|inspect|macro_exported\?|make_ref|match?|max|min|pop_in|put_elem|put_in|send|spawn|spawn_link|spawn_monitor|struct|struct!|tap|then|throw|to_charlist|to_string|update_in|var!)(\s|$)"
+
+# keywords
+color brightblue "(\s|^)(def|defdelegate|defexception|defguard|defguardp|defimpl|defmacro|defmacrop|defmodule|defoverridable|defp|defprotocol|defstruct|do|else|end|if|raise|reraise|unless|use)(\s|$)"
+
+# comments
+color black "^\s*#.*"
+
+# reminders
+color lightblack,yellow "(FIXME|TODO|XXX)"
+
+# strings
+color green ""([^"]|\\")*""
+color green "'([^']|\\')*'"
+
+color green start="[^\\]"""" end="[^\\]""""
+
+color green "~D\[[^\]]*\]"
+color green "~N\[[^\]]*\]"
+color green "~r/[^/]*/"
+color green "~T\[[^\]]*\]"
+color green "~U\[[^\]]*\]"
+
+# specs and decorators
+color magenta "^\s*@[^0-9'"]*"
+
+# trailing whitespace
+color normal,red "\s+$"

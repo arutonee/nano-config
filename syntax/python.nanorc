@@ -1,15 +1,13 @@
 syntax "python" "\.py$"
+# syntax "python" "^.$"
 comment "#"
 tabgives "    "
 
+# numbers
+color cyan "[0-9][0-9_\.]*"
+
 # unused variables
 color black "_[^_][^\),]*"
-
-# numbers
-color cyan "[0-9][0-9_]*"
-
-# function definition
-color red "\s*def\ [A-Za-z0-9_]*"
 
 # module/class
 color yellow "^(from|import|class)\ [A-Za-z0-9_]*"

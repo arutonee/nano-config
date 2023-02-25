@@ -4,9 +4,8 @@ syntax "EXAMPLE" "^/home/.*/\.config/nano/example.syntax.nanorc$"
 comment "#"
 # tabgives
 
-color black "__unused_variables"
 color cyan "__numbers"
-color red "__function_definition"
+color black "__unused_variables"
 color yellow "__module_or_class"
 color brightred "__builtins"
 color brightblue "__keywords"
