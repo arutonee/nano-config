@@ -37,7 +37,7 @@ include "~/.config/nano/example.syntax.nanorc"
 
 # Syntax Extensions
 ## Elixir
-extendsyntax Elixir formatter mix format
+extendsyntax elixir formatter mix format
 
 # Keybinds
 bind ^C cancel all
