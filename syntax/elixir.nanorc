@@ -2,7 +2,7 @@ syntax "elixir" "\.exs?$"
 comment "#"
 
 # numbers
-color cyan "[0-9][0-9_\.]*"
+color cyan "([0-9]|0x|0b|0o)[0-9_\.]*"
 
 # unused variables
 color black "_(\w|!)*"
@@ -38,6 +38,9 @@ color green "~N\[[^\]]*\]"
 color green "~r/[^/]*/"
 color green "~T\[[^\]]*\]"
 color green "~U\[[^\]]*\]"
+
+color green "(\s|^)\?.(\s|$)"
+color green "(\s|^)\?\\.(\s|$)"
 
 # specs and decorators
 color magenta "^\s*@[^0-9'"]*"
